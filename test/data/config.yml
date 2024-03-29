@@ -1,0 +1,23 @@
+restStubs:
+- ==: RestStub
+  path:
+  - rest
+  - items
+  protocol: HTTP
+  method: POST
+  ipOrDomain: 192.168.10.3
+  port: 8080
+  name: raspberry
+  header:
+    Accept: application/json
+    Content-Type: text/plain
+levers:
+- ==: OpenHabLeverConfig
+  itemName: poweroutletASwitch
+  restStubName: raspberry
+  coordinates:
+    ==: WorldCoordinates
+    worldName: world
+    x: -125.0
+    y: 71.0
+    z: 220.0

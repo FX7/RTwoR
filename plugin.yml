@@ -1,0 +1,13 @@
+name: Redstone2Rest
+main: fx7.r2r.RedstoneTwoRestPlugin
+version: 0.1
+api-version: 1.13
+commands:
+   r2rs:
+      description: Start/Abort selection of switch
+      usage: /r2rs
+      permission: RedstoneTwoRestPlugin.r2r
+   r2rc:
+      description: Creates r2r entry after selection
+      usage: /r2rc <name>
+      permission: RedstoneTwoRestPlugin.r2r
